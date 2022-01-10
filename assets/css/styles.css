@@ -6,8 +6,21 @@
     border: 0;
     box-sizing: border-box;
 }
+/* font init */
+
+@font-face {
+    font-family: "Geometric";
+    src: url("/assets/fonts/Exima\ Geometric.otf") format("woff");
+}
+
+@font-face {
+    font-family: "line";
+    src: url("/assets/fonts/Dark\ Line.ttf") format("truetype");
+}
+/* ----------------- */
 
 body{
+    width: 100%;
     --body-bg-color: #95b7c7;
     background-color: var(--body-bg-color);
 }
@@ -21,7 +34,8 @@ body{
     animation-name: open-head;
     animation-duration: 3s;
     animation-fill-mode: forwards;
-    position: fixed;
+    position: absolute;
+    z-index: 9;
 }
 
 /* anime bg-header */
@@ -37,14 +51,17 @@ body{
 .cloud{
     width: 100%;
     height: 500px;
-    position: fixed;
+    position: absolute;
     opacity: 0.2;
+    overflow: hidden;
+    z-index:9;
 }
 
 .cloud div{
     width: 10%;
     height: 20%;
-    position: fixed;
+    position: absolute;
+    z-index: 7;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
@@ -101,3 +118,127 @@ body{
 	}
 }
 /* -------------------------- */
+/* ####### BODY #############*/
+
+.body-Container{
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+/* #----------- container me */
+
+.header-container-me{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 12;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.picture-Avatar{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: #030303 3px solid;
+    margin: 50px;
+    animation-name: coin-avatar;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    transform: translateY(100px);
+}
+
+@keyframes coin-avatar {
+    25% {
+		transform: translateY(100px);
+        opacity: 0;
+	}
+	100% {
+		transform: translateY(0px);
+        opacity: 1;
+	}
+}
+
+.header-container-me h1{
+    font-family: "Geometric";
+    font-size: 40px;
+    text-align: center;
+}
+
+.header-container-me h3{
+    margin-top: 50px;
+    font-size: 30px;
+    text-align: center;
+    border-bottom: 2px #000 solid;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.conatainer-contact {
+    width: 100%;
+    margin-top: 50px;
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+    display: flex;
+    justify-content: space-around;
+}
+
+.conatainer-contact img:hover {
+    filter: invert(1);
+}
+
+.containerpdf{
+    background: linear-gradient( #000000,#5300d8,#00a9dd,#0044ff);
+    padding: 3px;
+    margin-top: 50px;
+    transition: 0.5s;
+    background-size: 200% 200%;
+    background-position: 0% 0%;
+}
+
+.containerpdf:hover{
+    background-position: 0% 100%;
+}
+
+.in-ct-pdf{
+    width: 100%;
+    background-color: var(--body-bg-color); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.in-ct-pdf p{
+    color: #000;
+    font-weight: bold;
+}
+
+.btnPdf img{
+    transform: scale(0.5);
+    transition: 0.3s;
+}
+
+.btnPdf img:hover{
+    filter: invert(1);
+    transform: scale(0.8);
+}
+
+@media screen and (max-width: 576px){
+
+    .header-container-me{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .conatainer-contact{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* container me -----------# */
