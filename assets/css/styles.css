@@ -230,29 +230,34 @@ body{
     transform: scale(0.8);
 }
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 706px){
 
     .header-container-me{
         padding-left: 30px;
         padding-right: 30px;
     }
     .conatainer-contact{
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
+
+    .conatainer-contact img{
+        width: 3em;
+    }
+
+    /* cloud event */
     .cloud div img{
         width: 25vw;
         height: 25vw;
     }
 }
-
 /* container me -----------# */
 
 /* -------- box-aspiration  */
 .container-aspiration{
-    background-color: #fff;
+    background-color: #ebeaea;
     margin: 50px 40px;
-    box-shadow: #000 1px 1px 5px;
+    box-shadow: #505050 1px 1px 5px;
     padding: 50px;
     display: flex;
     flex-direction: column;
@@ -283,7 +288,7 @@ body{
     background-color: #171599;
     flex-wrap: wrap;
     width: 50%;
-    box-shadow: black 1px 1px 5px;
+    box-shadow: #444444 1px 1px 5px;
     margin: 5px;
 }
 .box-lang h4{
@@ -343,7 +348,7 @@ body{
     color: #000;
 }
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 706px){
 
     .container-competences{
         flex-direction: column;
@@ -359,6 +364,43 @@ body{
     }
 }
 /* box-Compétences -------#*/
+
+/* #------- skills */
+.containerSkills{
+    width: 100%;
+    padding: 5px 70px;
+}
+
+.boxSkills{
+    width: 100%;
+    background: linear-gradient(45deg,#fff,#fff, #808080);
+    padding: 15px;
+    box-shadow: 0px 1px 5px rgb(66, 66, 66);
+}
+.boxSkills h2{
+    margin-bottom: 5px;
+    font-family: "kaoly";
+}
+
+.boxSkills div{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+}
+.boxSkills div p{
+    margin: 0px 5px ;
+    font-weight: bold;
+    width: 120px;
+}
+@media screen and (max-width: 706px){
+    .containerSkills{
+        padding: 5px 20px;
+    }
+    .boxSkills div p{
+        font-size: 0.8em;
+    }
+}
+/* skills -------# */
 
 /* #------- box-realisation */
 .container-realisation{
@@ -451,7 +493,7 @@ body{
 }
 /* box-realisation -------# */
 
-/* box-experience -------# */
+/* #------- box-experience */
 .container-experiences{
     display: flex;
     margin-top: 50px;
@@ -506,6 +548,11 @@ body{
     text-align: center;
     font-size: 18px;
     padding: 7px 0px;
+}
+
+.bodyinfos ul li{
+ list-style: square;
+ margin-left: 15px;
 }
 
 .box_date{
@@ -644,3 +691,29 @@ body{
     }
 }
 /* box Loisirs -------# */
+
+/* progress css */
+.progress2{
+    --level-progress2: 0%;
+    --color-progress: #08b;
+    display: block;
+    width: 100%;
+    height: 7px;
+    border: solid 1px #8a8a8a;
+    box-sizing: border-box;
+    border-radius: 0px;
+}
+
+.progress2:after {
+    content: "";
+    display: block;
+    background-color: var(--color-progress);
+    height: 100%;
+    border-radius: 0px;
+    transition: 4s;
+    width:  0%;
+}
+
+.progress2.active:after {
+    width:  var(--level-progress2);
+}
