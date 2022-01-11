@@ -127,8 +127,10 @@ body{
 
 .body-Container{
     width: 100%;
+    max-width: 1500px;
     position: relative;
     z-index: 10;
+    margin: auto;
 }
 
 /* #----------- container me */
