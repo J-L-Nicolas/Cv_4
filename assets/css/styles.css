@@ -273,7 +273,9 @@ body{
     text-align: center;
 }
 /* box-aspiration -------  */
-
+div a img{
+    opacity: 0.1;
+}
 /* #------- box-Compétences */
 .container-competences{
     width: 100%;
