@@ -194,6 +194,10 @@ body{
     justify-content: space-around;
 }
 
+.conatainer-contact img{
+    opacity: 1;
+}
+
 .conatainer-contact img:hover {
     filter: invert(1);
 }
@@ -223,6 +227,7 @@ body{
 .btnPdf img{
     transform: scale(0.5);
     transition: 0.3s;
+    opacity: 1;
 }
 
 .btnPdf img:hover{
@@ -243,6 +248,7 @@ body{
 
     .conatainer-contact img{
         width: 3em;
+        opacity: 1;
     }
 
     /* cloud event */
@@ -274,7 +280,7 @@ body{
 }
 /* box-aspiration -------  */
 div a img{
-    opacity: 0.1;
+    opacity: 0.01;
 }
 /* #------- box-Compétences */
 .container-competences{
