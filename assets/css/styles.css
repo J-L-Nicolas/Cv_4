@@ -27,7 +27,14 @@
 body{
     width: 100%;
     --body-bg-color: #95b7c7;
+    --mode-texte-color: #000;
+    --img-color: invert(0);
+    --img-color-hover: invert(1);
+    --bg-colr-primaery: #171599;
+    --bg-colr-secondary: #e4e4ff;
+    --bg-color-fff: #ebeaea;
     background-color: var(--body-bg-color);
+    transition: 1s;
 }
 
 /* bg-header */
@@ -180,26 +187,30 @@ body{
     margin-top: 50px;
     font-size: 30px;
     text-align: center;
-    border-bottom: 2px #000 solid;
+    border-bottom: 2px var(--mode-texte-color) solid;
     padding-left: 20px;
     padding-right: 20px;
+    color: var(--mode-texte-color);
+    transition: 1s;
 }
 
 .conatainer-contact {
     width: 100%;
     margin-top: 50px;
-    border-left: 2px solid #000;
-    border-right: 2px solid #000;
+    border-left: 2px solid var(--mode-texte-color);
+    border-right: 2px solid var(--mode-texte-color);
     display: flex;
     justify-content: space-around;
+    transition: 1s;
 }
 
 .conatainer-contact img{
     opacity: 1;
+    filter: var(--img-color);
 }
 
 .conatainer-contact img:hover {
-    filter: invert(1);
+    filter: var(--img-color-hover);
 }
 
 .containerpdf{
@@ -220,14 +231,16 @@ body{
 }
 
 .in-ct-pdf p{
-    color: #000;
+    color: var(--mode-texte-color);
     font-weight: bold;
+    transition: 1s;
 }
 
 .btnPdf img{
     transform: scale(0.5);
     transition: 0.3s;
     opacity: 1;
+    filter: var(--img-color);
 }
 
 .btnPdf img:hover{
@@ -261,7 +274,7 @@ body{
 
 /* -------- box-aspiration  */
 .container-aspiration{
-    background-color: #ebeaea;
+    background-color: var(--bg-color-fff);
     margin: 50px 40px;
     box-shadow: #505050 1px 1px 5px;
     padding: 50px;
@@ -274,9 +287,13 @@ body{
 .container-aspiration h3{
     font-family: "kaoly";
     margin-bottom: 10px;
+    transition: 1s;
+    color: var(--mode-texte-color);
 }
 .container-aspiration p{
     text-align: center;
+    transition: 1s;
+    color: var(--mode-texte-color);
 }
 /* box-aspiration -------  */
 div a img{
@@ -293,7 +310,7 @@ div a img{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #171599;
+    background-color: var(--bg-colr-primaery);
     flex-wrap: wrap;
     width: 50%;
     box-shadow: #444444 1px 1px 5px;
@@ -326,7 +343,7 @@ div a img{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #e4e4ff;
+    background-color: var(--bg-colr-secondary);
     flex-wrap: wrap;
     width: 50%;
     box-shadow: #3b3b3b 1px 1px 5px;
@@ -338,8 +355,9 @@ div a img{
     text-align: center;
     margin: 10px;
     font-family: "kaoly";
-    color: #000;
     font-size: 20px;
+    transition: 1s;
+    color: var(--mode-texte-color);
 }
 .box-soft div{
     margin: 5px 5px;
@@ -350,10 +368,16 @@ div a img{
     flex-wrap: wrap;
 }
 
+.git-img{
+    filter: var(--img-color);
+    transition: 1s;
+}
+
 .box-soft p{
     text-align: center;
     margin-top: 5px;
-    color: #000;
+    transition: 1s;
+    color: var(--mode-texte-color);
 }
 
 @media screen and (max-width: 706px){
@@ -381,13 +405,15 @@ div a img{
 
 .boxSkills{
     width: 100%;
-    background: linear-gradient(45deg,#fff,#fff, #808080);
+    background: linear-gradient(45deg,var(--bg-color-fff),var(--bg-color-fff), #808080);
     padding: 15px;
-    box-shadow: 0px 1px 5px rgb(66, 66, 66);
+    box-shadow: 0px 1px 5px #424242;
 }
 .boxSkills h2{
     margin-bottom: 5px;
     font-family: "kaoly";
+    transition: 1s;
+    color: var(--mode-texte-color);
 }
 
 .boxSkills div{
@@ -399,6 +425,8 @@ div a img{
     margin: 0px 5px ;
     font-weight: bold;
     width: 120px;
+    transition: 1s;
+    color: var(--mode-texte-color);
 }
 @media screen and (max-width: 706px){
     .containerSkills{
@@ -422,10 +450,12 @@ div a img{
     width: 100%;
     text-align: center;
     margin-bottom: 10px;
+    transition: 1s;
+    color: var(--mode-texte-color);
 }
 
 .projet{
-    border: #000 1px solid;
+    border: var(--mode-texte-color) 1px solid;
     border-radius: 0px;
     padding: 10px;
     background: linear-gradient(140deg,var(--body-bg-color),#000,#000,#000);
@@ -439,8 +469,10 @@ div a img{
 
 .infos-projet h3{
     margin-bottom: 10px;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid var(--mode-texte-color);
     transition: 1s;
+    transition: 1s;
+    color: var(--mode-texte-color);
 }
 
 .infos-projet p{
@@ -514,6 +546,8 @@ div a img{
     width: 100%;
     text-align: center;
     margin-bottom: 10px;
+    transition: 1s;
+    color: var(--mode-texte-color);
 }
 
 .boxExp{
@@ -526,7 +560,7 @@ div a img{
 }
 
 .boxtitle{
- background-color: #171599;
+ background-color: var(--bg-colr-primaery);
  width: 80%;
  height: 40px;
  display: flex;
@@ -540,7 +574,7 @@ div a img{
 }
 
 .bodyinfos{
-    background-color: #e4e4ff;
+    background-color: var(--bg-colr-secondary);
     width:70%;
     box-shadow: 1px 1px 5px #333;
     padding: 5px;
@@ -548,19 +582,25 @@ div a img{
 
 .bodyinfos p{
     text-align: center;
-    border-bottom: 1px #889 solid;
+    border-bottom: 1px var(--mode-texte-color) solid;
     margin-bottom: 20px;
+    transition: 1s;
+    color: var(--mode-texte-color);
 }
 
 .bodyinfos h4{
     text-align: center;
     font-size: 18px;
     padding: 7px 0px;
+    transition: 1s;
+    color: var(--mode-texte-color);
 }
 
 .bodyinfos ul li{
  list-style: square;
  margin-left: 15px;
+ transition: 1s;
+color: var(--mode-texte-color);
 }
 
 .box_date{
@@ -570,7 +610,7 @@ div a img{
 }
 
 .box_date p{
-    background-color: #171599;
+    background-color: var(--bg-colr-primaery);
     color: #fff;
     padding: 5px;
 }
@@ -600,6 +640,8 @@ div a img{
     width: 100%;
     text-align: center;
     margin-bottom: 10px;
+    transition: 1s;
+    color: var(--mode-texte-color);
 }
 .boxContainerform{
     width: 33%;
@@ -623,8 +665,10 @@ div a img{
     text-align: center;
     font-weight: bold;
     padding-bottom: 10px;
-    border-bottom: 1px #000 solid;
+    border-bottom: 1px  var(--mode-texte-color) solid;
     padding: 10px;
+    transition: 1s;
+    color: var(--mode-texte-color);
 }
 
 .boxForm ul{
@@ -635,6 +679,8 @@ div a img{
 
 .boxForm ul li{
     padding: 5px 0px;
+    transition: 1s;
+    color: var(--mode-texte-color);
 }
 
 @media screen and (max-width: 706px){
@@ -663,14 +709,17 @@ div a img{
     width: 100%;
     text-align: center;
     margin-bottom: 10px;
+    transition: 1s;
+    color: var(--mode-texte-color);
 }
 
 .box-Container-loisir{
     width: 100%;
-    background: linear-gradient(var(--body-bg-color), #000);
+    background: linear-gradient(var(--body-bg-color), var(--mode-texte-color));
     padding-left: 5px;
     padding-bottom: 5px;
     padding-right: 5px;
+    transition: 1s;
 }
 
 .childBoxloisir{
@@ -678,6 +727,7 @@ div a img{
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
+    transition: 1s;
 }
 
 .boxLoisir{
@@ -689,9 +739,14 @@ div a img{
 
 .boxLoisir img{
     width:25px;
+    filter: var(--img-color);
+    transition: 1s;
 }
 
-
+.boxLoisir p{
+    transition: 1s;
+    color: var(--mode-texte-color);
+}
 
 @media screen and (max-width: 706px){
     .container_loisirs{
@@ -699,6 +754,59 @@ div a img{
     }
 }
 /* box Loisirs -------# */
+
+
+/* #----- dark mode */
+.btn_dark{
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    border-radius: 15px;
+    padding: 2px;
+    box-shadow: 1px 0px 5px #333;
+    cursor: pointer;
+    animation-name: darkbtn ;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    transition: 0.4s;
+}
+
+.btn_dark:hover{
+    background-color: #838383;
+}
+
+.dark_text{
+    color: #fff;
+    font-weight: bold;
+    margin-right: 3px;
+    margin-left: 3px;
+    transition: 1s;
+}
+
+.dark_img{
+    width: 30px;
+    height: 30px;
+    background: url("/assets/images/lg_lune.png");
+    background-color: #fff;
+    border-radius: 50%;
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid #000;
+    transition: 1s;
+}
+
+@keyframes darkbtn {
+    0% { transform: rotate(0deg) }
+    15% { transform: rotate(360deg); }
+    100% { transform: rotate(360deg);}
+}
+/* dark mode ------# */
 
 /* progress css */
 .progress2{
@@ -725,3 +833,4 @@ div a img{
 .progress2.active:after {
     width:  var(--level-progress2);
 }
+
