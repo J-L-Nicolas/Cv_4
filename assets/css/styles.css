@@ -30,7 +30,7 @@ body{
     --mode-texte-color: #000;
     --img-color: invert(0);
     --img-color-hover: invert(1);
-    --bg-colr-primaery: #171599;
+    --bg-colr-primaery: #475dbf; /* #171599 */
     --bg-colr-secondary: #e4e4ff;
     --bg-color-fff: #ebeaea;
     background-color: var(--body-bg-color);
@@ -300,6 +300,15 @@ div a img{
     opacity: 0.01;
 }
 /* #------- box-Compétences */
+.h2title{
+    font-family: "kaoly";
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    transition: 1s;
+    color: var(--mode-texte-color);
+}
+
 .container-competences{
     width: 100%;
     padding: 0px 50px;
@@ -394,6 +403,10 @@ div a img{
         width: 100%;
         margin: 10px 0px;
     }
+
+    .asText {
+        margin-top: 30px;
+    }
 }
 /* box-Compétences -------#*/
 
@@ -458,7 +471,7 @@ div a img{
     border: var(--mode-texte-color) 1px solid;
     border-radius: 0px;
     padding: 10px;
-    background: linear-gradient(140deg,var(--body-bg-color),#000,#000,#000);
+    background: linear-gradient(140deg,var(--body-bg-color),#364247,#364247,#000);
     display: flex;
     box-shadow: #333 1px 1px 5px;
 }
@@ -492,14 +505,14 @@ div a img{
 }
 
 .boximg:hover > img{
-    width: 200px;
-    height: 400px;
+    width: 400px;
+    height: 800px;
     cursor: pointer;
 }
 
 .imgs-projet img:hover{
-    width: 200px;
-    height: 400px;
+    width: 400px;
+    height: 800px;
     cursor: pointer;
 }
 
@@ -510,7 +523,7 @@ div a img{
     }
     .projet{
         flex-direction: column;
-        background: linear-gradient(170deg,var(--body-bg-color),#000,#000,#000);
+        background: linear-gradient(170deg,var(--body-bg-color),#364247,#364247,#000);
     }
     .infos-projet{
         width: 100%;
@@ -561,7 +574,7 @@ div a img{
 
 .boxtitle{
  background-color: var(--bg-colr-primaery);
- width: 80%;
+ width: 95%;
  height: 40px;
  display: flex;
  align-items: center;
@@ -575,7 +588,7 @@ div a img{
 
 .bodyinfos{
     background-color: var(--bg-colr-secondary);
-    width:70%;
+    width:85%;
     box-shadow: 1px 1px 5px #333;
     padding: 5px;
 }
@@ -585,6 +598,8 @@ div a img{
     border-bottom: 1px var(--mode-texte-color) solid;
     margin-bottom: 20px;
     transition: 1s;
+    padding-top: 20px;
+    padding-bottom: 20px;
     color: var(--mode-texte-color);
 }
 
@@ -600,6 +615,7 @@ div a img{
  list-style: square;
  margin-left: 15px;
  transition: 1s;
+ padding-left: 10px;
 color: var(--mode-texte-color);
 }
 

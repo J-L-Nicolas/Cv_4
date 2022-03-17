@@ -53,8 +53,8 @@ const toggleMode = () =>{
         bodyBox.style.setProperty('--mode-texte-color', "#fff")
         bodyBox.style.setProperty('--img-color', "invert(1)")
         bodyBox.style.setProperty('--img-color-hover', "drop-shadow(0px 0px 5px #fff)")
-        bodyBox.style.setProperty('--bg-colr-primaery','#090c2f')
-        bodyBox.style.setProperty('--bg-colr-secondary','#231f10')
+        bodyBox.style.setProperty('--bg-colr-primaery','#1A244A') //#090c2f
+        bodyBox.style.setProperty('--bg-colr-secondary','#21212c')
         bodyBox.style.setProperty('--bg-color-fff','#424242')
     }else{
         // light
@@ -66,7 +66,7 @@ const toggleMode = () =>{
         bodyBox.style.setProperty('--mode-texte-color', "#000")
         bodyBox.style.setProperty('--img-color', "invert(0)")
         bodyBox.style.setProperty('--img-color-hover', "invert(1)")
-        bodyBox.style.setProperty('--bg-colr-primaery','#171599')
+        bodyBox.style.setProperty('--bg-colr-primaery','#475dbf')
         bodyBox.style.setProperty('--bg-colr-secondary','#e4e4ff')
         bodyBox.style.setProperty('--bg-color-fff','#ebeaea')
     }
