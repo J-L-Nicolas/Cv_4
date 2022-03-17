@@ -299,6 +299,9 @@ body{
 div a img{
     opacity: 0.01;
 }
+.disclaimer {
+    opacity: 0.01;
+}
 /* #------- box-Compétences */
 .h2title{
     font-family: "kaoly";
