@@ -296,6 +296,14 @@ body{
     color: var(--mode-texte-color);
 }
 /* box-aspiration -------  */
+
+/* tube */
+.tube {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
 div a img{
     opacity: 0.01;
 }
