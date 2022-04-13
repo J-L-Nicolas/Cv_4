@@ -22,6 +22,11 @@
     font-family: "kaoly";
     src: url("/assets/fonts/Kaoly\ Demo-Regular.ttf") format("truetype");
 }
+
+@font-face {
+    font-family: "origin";
+    src: url("/assets/fonts/OriginTech\ personal\ use.otf") format("woff");
+}
 /* ----------------- */
 
 body{
@@ -184,6 +189,7 @@ body{
 }
 
 .header-container-me h3{
+    font-family: 'origin';
     margin-top: 50px;
     font-size: 30px;
     text-align: center;
