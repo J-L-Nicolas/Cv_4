@@ -48,7 +48,7 @@ const toggleMode = () =>{
         dark_text.innerHTML = "Go -> Light";
         dark_text.style.setProperty('color',"#000");
         btn_dack.style.setProperty('background-color','#fff')
-        dark_img.style.backgroundImage  = "url('/assets/images/lg_sun.png')";
+        dark_img.style.backgroundImage  = "url('assets/images/lg_sun.png')";
         bodyBox.style.setProperty('--body-bg-color', "#111")
         bodyBox.style.setProperty('--mode-texte-color', "#fff")
         bodyBox.style.setProperty('--img-color', "invert(1)")
@@ -61,7 +61,7 @@ const toggleMode = () =>{
         dark_text.innerHTML = "Go -> Dark";
         dark_text.style.setProperty('color',"#fff");
         btn_dack.style.setProperty('background-color','#000')
-        dark_img.style.backgroundImage  = "url('/assets/images/lg_lune.png')";
+        dark_img.style.backgroundImage  = "url('assets/images/lg_lune.png')";
         bodyBox.style.setProperty('--body-bg-color', "#95b7c7")
         bodyBox.style.setProperty('--mode-texte-color', "#000")
         bodyBox.style.setProperty('--img-color', "invert(0)")
