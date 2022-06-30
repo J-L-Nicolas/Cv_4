@@ -10,22 +10,22 @@
 
 @font-face {
     font-family: "Geometric";
-    src: url("assets/fonts/Exima\ Geometric.otf") format("woff");
+    src: url("../fonts/Exima\ Geometric.otf") format("woff");
 }
 
 @font-face {
     font-family: "line";
-    src: url("assets/fonts/Dark\ Line.ttf") format("truetype");
+    src: url("../fonts/Dark\ Line.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "kaoly";
-    src: url("assets/fonts/Kaoly\ Demo-Regular.ttf") format("truetype");
+    src: url("../fonts/Kaoly\ Demo-Regular.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "origin";
-    src: url("assets/fonts/OriginTech\ personal\ use.otf") format("woff");
+    src: url("../fonts/OriginTech\ personal\ use.otf") format("woff");
 }
 /* ----------------- */
 
@@ -824,7 +824,7 @@ color: var(--mode-texte-color);
 .dark_img{
     width: 30px;
     height: 30px;
-    background: url("assets/images/lg_lune.png");
+    background: url("../images/lg_lune.png");
     background-color: #fff;
     border-radius: 50%;
     background-size: 80%;
