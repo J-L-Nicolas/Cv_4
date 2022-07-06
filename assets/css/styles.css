@@ -513,7 +513,7 @@ div a img{
     border-radius: 0px;
     padding: 10px;
     display: flex;
-    z-index: 5;
+    z-index: 6;
 }
 
 .infos-projet{
