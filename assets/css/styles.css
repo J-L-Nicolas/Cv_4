@@ -539,20 +539,21 @@ div a img{
 }
 
 .imgs-projet img{
- width: 50px;
- height: 100px;
- transition: 1s;
+    width: 60px;
+    height: auto;
+    transition: 1s;
+    object-fit: cover;
 }
 
 .boximg:hover > img{
-    width: 400px;
-    height: 800px;
+    width: 370px;
+    height: auto;
     cursor: pointer;
 }
 
 .imgs-projet img:hover{
-    width: 400px;
-    height: 800px;
+    width: 370px;
+    height: auto;
     cursor: pointer;
 }
 
