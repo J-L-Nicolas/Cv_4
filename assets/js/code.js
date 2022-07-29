@@ -89,3 +89,18 @@ const toggleMode = () =>{
       videoId: 'nfK3TK_aRCg',
     });
   }
+
+//optimisation load image gif
+let imagesToLoad = document.querySelectorAll('img[data-src]');
+const loadImages = (image) => {
+    image.setAttribute('src', image.getAttribute('data-src'));
+    image.onload = () => {
+      image.removeAttribute('data-src');
+    };
+};
+
+onload = (event) =>{
+    imagesToLoad.forEach((img) => {
+        loadImages(img);
+    });
+}
