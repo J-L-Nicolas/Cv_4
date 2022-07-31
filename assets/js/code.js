@@ -91,7 +91,7 @@ const toggleMode = () =>{
   }
 
 //optimisation load image gif
-let imagesToLoad = document.querySelectorAll('img[data-src]');
+const imagesToLoad = document.querySelectorAll('img[data-src]');
 const loadImages = (image) => {
     image.setAttribute('src', image.getAttribute('data-src'));
     image.onload = () => {
@@ -99,8 +99,15 @@ const loadImages = (image) => {
     };
 };
 
+const containerLoader = document.querySelector("#loading")
+const containerHeader = document.querySelector(".containerHeader")
+const pictureAvatar = document.querySelector(".picture-Avatar")
+
 onload = (event) =>{
     imagesToLoad.forEach((img) => {
         loadImages(img);
+        containerLoader.style.display = "none"
+        pictureAvatar.style.animationName = "coin-avatar"
+        containerHeader.style.animationName = "open-head"
     });
 }
