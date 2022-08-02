@@ -109,5 +109,6 @@ onload = (event) =>{
         containerLoader.style.display = "none"
         pictureAvatar.style.animationName = "coin-avatar"
         containerHeader.style.animationName = "open-head"
+        window.scrollTo(0, 0)
     });
 }
