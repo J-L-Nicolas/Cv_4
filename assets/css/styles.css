@@ -164,11 +164,16 @@ body {
   border-radius: 50%;
   border: #030303 3px solid;
   margin: 50px;
-  /* animation-name: coin-avatar; */
+  animation-name: coin-avatar;
   animation-duration: 3s;
   animation-fill-mode: forwards;
   opacity: 0;
   transform: translateY(100px);
+  transition: 1s;
+}
+
+.picture-Avatar:hover {
+  filter: blur(100px);
 }
 
 @keyframes coin-avatar {
